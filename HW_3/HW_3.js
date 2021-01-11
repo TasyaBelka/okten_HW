@@ -54,9 +54,101 @@ let book = {
 //- 3 5 людей
 //- з 5 автомобілів
 
-let dogs = ['German Shepherd', 'Doberman', 'French Bulldog', 'Italian Greyhound', 'Pug']; 
-let users = ['Ivan Petrov', 'Eva Gold', 'Sven Burnt', 'Anna Grishko', 'Oleg Kravets'];
-let cars = ['Subaru', 'Nissan', 'Toyota', 'Mitsubishi', 'WV'];
+let dogs = [
+  { breed : 'German Shepherd',
+    sex : 'male',
+    age: 6,
+    color : 'black-backed',
+    size : 62,
+    guard : 'yes'
+  },
+  { breed : 'Doberman',
+    sex : 'female',
+    age: 3,
+    color : 'black-backed',
+    size : 53,
+    guard : 'yes'
+  },
+  { breed : 'French Bulldog',
+    sex : 'male',
+    age: 1,
+    color : 'palomino',
+    size : 30,
+    guard : 'yes'
+  },
+  { breed : 'Italian Greyhound',
+    sex : 'female',
+    age: 2,
+    color : 'dark-brown',
+    size : 23,
+    guard : 'no'
+  }, 
+  { breed : 'Pug',
+    sex : 'male',
+    age: 10,
+    color : 'white',
+    size : 26,
+    guard : 'no'
+  }]; 
+
+let users = [
+  { fullName : 'Ivan Petrov',
+    age : 32,
+    city : 'Kiev',
+    major : 'developer'
+  },
+  { fullName : 'Eva Gold',
+    age : 27,
+    city : 'Chicago',
+    major : 'housekeeper'
+  }, 
+  { fullName : Sven Burnt',
+    age : 41,
+    city : 'Oslo',
+    major : 'builder'
+  },  
+  { fullName : 'Anna Grishko', 
+    age : 18,
+    city : 'Vladivostok',
+    major : 'student'
+  },
+  { fullName : 'Oleg Kravets'
+    age : 26,
+    city : 'Minsk',
+    major : 'engineer'
+  }];
+
+let cars = [
+  { model : 'Nissan',
+    type : 'GT-R34',
+    engine : 'RB26DETT',
+    hp : 280,
+    driveUnit : '4WD'
+  }, 
+  { model : 'Subaru',
+    type : 'WRX STI',
+    engine : 'EJ277',
+    hp : 300,
+    driveUnit : '4WD'
+  }, 
+  { model : 'Toyota',
+    type : 'Supra',
+    engine : 'B58B30',
+    hp : 340,
+    driveUnit : '4WD'
+  }, 
+  { model : 'Mitsubishi',
+    type : 'Evolution 9',
+    engine : '4G63T',
+    hp : 280,
+    driveUnit : '4WD'
+  }, 
+  { model : 'WV',
+    type : 'Golf GTI',
+    engine : 'DJHA',
+    hp : 310,
+    driveUnit : '4WD'
+  }];
 
 console.log(dogs);
 console.log(users);
@@ -210,8 +302,8 @@ console.log(rules.classList);
 let list = document.getElementsByClassName('fc_rules');
 console.log(list);
 
-for (let i = 0; i < list.length; i++) {
-  list[i].style.color = 'red';
+for (let items of list) {
+  items.style.color = 'red';
 }
 */
 // Task 6 (task_6.html)
