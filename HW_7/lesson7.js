@@ -14,7 +14,7 @@ btn.addEventListener('click', function () {
 
 let btn = document.getElementById('btn');
 btn.onclick = function() {
-  document.getElementById('btn').hidden = true;
+  this.hidden = true;
 };
 
 // Task 3
